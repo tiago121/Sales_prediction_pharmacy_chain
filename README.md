@@ -63,12 +63,33 @@ Objetivo: traduzir as métricas do modelo para a performance de negócio, servin
 Processo: uso da variação de MAE como uma espécie de "intervalo de confiança" para criar cenários de negócio (pessimista, realista e otimista)
 
 
-
-
 # 3. Avaliação dos modelos
+
+A etapa de machine learning onde a modelagem de ML é realizada. Quatro modelos foram treinados usando validação cruzada:
+
+-
+-
+-
+
+![image](https://user-images.githubusercontent.com/88745881/207362195-49a621be-b5a9-4aa8-ad8d-f4758d0ddab4.png)
+
+O modelo escolhido neste projeto foi o XGBoost : foi o algoritmo mais rápido e eficiente para treinar e ajustar.
+
 
 # 4. Resultado de Negócio
 
+Foram feitas previsões de cenários para cada loja. É preciso analisar cada caso para entender se a reforma vale a pena, mas em geral ela é recomendável. No total das lojas para os próximos 6 meses, temos essas previsões:
+
+![image](https://user-images.githubusercontent.com/88745881/207363754-482e15f5-6adb-4dce-8b4a-8cf38e57b039.png)
+
+
 # 5. Conclusão
 
+- Apesar de algumas lojas possuírem erros consideráveis, quase todas apresentam erro abaixo de 20% (MAPE) nas previsões.
+- Os cenários criados possibilitam a tomada de decisão de forma mais resposnável:  na maioria das lojas é recomendável o investimento na estrutura de tele-entrega, já que a receita segue com relativa previsibilidade, supondo que nada de atípico acontecerá.
+- Nosso modelo é 4x melhor para prever a receita do que o modelo atualmente usado pela loja (média).
+
 # 6. Próximos passos
+
+ - Treinar diferentes modelos
+ - Fazer o deploy do modelo em produção
