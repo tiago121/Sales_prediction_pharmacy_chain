@@ -67,9 +67,6 @@ Processo: uso da variação de MAE como uma espécie de "intervalo de confiança
 
 A etapa de machine learning onde a modelagem de ML é realizada. Quatro modelos foram treinados usando validação cruzada:
 
--
--
--
 
 ![image](https://user-images.githubusercontent.com/88745881/207362195-49a621be-b5a9-4aa8-ad8d-f4758d0ddab4.png)
 
