@@ -1,5 +1,8 @@
 # Sales_prediction_pharmacy_chain
 
+![image](https://user-images.githubusercontent.com/88745881/207366040-0f610dd8-1dc4-470c-9b8e-d0d62ad52105.png)
+
+
 #### Made by Tiago Araujo
 
 # Descrição
