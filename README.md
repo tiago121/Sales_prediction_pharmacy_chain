@@ -11,7 +11,7 @@ O objetivo deste projeto é prever as vendas de várias lojas diferentes usando 
 
 # 1. Problema de negócio
 
-Uma cadeia de farmácias quer modernizar as drogarias da rede, implementando a possibilidade de tele-entrega em 100% delas. No entanto, o custo da operação é elevado e o maior desafio é saber se as lojas terão receita suficiente para realizar a reforma e ainda dar lucro.
+Uma cadeia de farmácias quer modernizar as drogarias da rede, implementando a possibilidade de tele-entrega em 100% delas. No entanto, o custo da operação é elevado e o maior desafio é saber se as lojas terão receita suficiente para realizar a reforma nos próximos 6 meses e ainda dar lucro.
 
 # 2. Estratégia de solução
 
@@ -65,6 +65,21 @@ Processo: uso do algoritmo random search para otimizar os parâmentros
 Objetivo: traduzir as métricas do modelo para a performance de negócio, servindo de base para a tomada de decisões
 Processo: uso da variação de MAE como uma espécie de "intervalo de confiança" para criar cenários de negócio (pessimista, realista e otimista)
 
+# Top Insights
+
+1. Quanto menor a distância para o competidor mais próximo. mais a loja vende
+
+![image](https://user-images.githubusercontent.com/88745881/207604932-de72ea46-5728-453b-8141-2b685297efe5.png)
+
+2. Há um lapso de vendas significativo durante as 40 e 50 primeiras semanas de venda, considerando promoções consecutivas
+
+![image](https://user-images.githubusercontent.com/88745881/207606165-7f20c910-bde2-466a-80cb-87d7a81e916f.png)
+
+3. Promoções ativas por mais tempo vendem menos (gráficos de cima)
+
+![image](https://user-images.githubusercontent.com/88745881/207606654-c954a5cc-6041-46d9-a00e-57f5395437c3.png)
+
+
 
 # 3. Avaliação dos modelos
 
@@ -86,7 +101,7 @@ Foram feitas previsões de cenários para cada loja. É preciso analisar cada ca
 # 5. Conclusão
 
 - Apesar de algumas lojas possuírem erros consideráveis, quase todas apresentam erro abaixo de 20% (MAPE) nas previsões.
-- Os cenários criados possibilitam a tomada de decisão de forma mais resposnável:  na maioria das lojas é recomendável o investimento na estrutura de tele-entrega, já que a receita segue com relativa previsibilidade, supondo que nada de atípico acontecerá.
+- Os cenários criados possibilitam a tomada de decisão de forma mais responsável:  na maioria das lojas é recomendável o investimento na estrutura de tele-entrega, já que a receita segue com relativa previsibilidade, supondo que nada de atípico acontecerá.
 - Nosso modelo é 4x melhor para prever a receita do que o modelo atualmente usado pela loja (média).
 
 # 6. Próximos passos
